@@ -81,8 +81,7 @@ public class BaseTest {
             logger.info(result.getThrowable());
             //logger.addScreenCaptureFromPath(methodName + ".png");
             //Attach screenshots to reports on failure
-            //logger.info("Screenshot attached here", MediaEntityBuilder.createScreenCaptureFromPath("../screenshots/" + methodName + ".png").build());
-            logger.info("Screenshot attached here", MediaEntityBuilder.createScreenCaptureFromPath(methodName + ".png").build());
+            logger.info("Screenshot attached here", MediaEntityBuilder.createScreenCaptureFromPath("../screenshots/" + methodName + ".png").build());
         }
         else if (result.getStatus() == ITestResult.SKIP) {
             String logString = "Test case " + methodName + " is Skipped";
@@ -130,13 +129,13 @@ public class BaseTest {
         }
         new File(Constants.reportPath).mkdir();
 
-/*        if (new File(Constants.screenshotsPath).exists()) {
+        if (new File(Constants.screenshotsPath).exists()) {
             try {
                 FileUtils.deleteDirectory(new File(Constants.screenshotsPath));
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        new File(Constants.screenshotsPath).mkdir();*/
+        new File(Constants.screenshotsPath).mkdir();
     }
 }
