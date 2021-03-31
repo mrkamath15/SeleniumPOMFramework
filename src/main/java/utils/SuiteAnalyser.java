@@ -8,7 +8,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.ITestAnnotation;
-import utils.Constants;
+import main.java.utils.Constants;
 
 import java.io.File;
 import java.io.IOException;

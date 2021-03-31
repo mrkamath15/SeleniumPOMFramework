@@ -18,7 +18,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import utils.Constants;
+import main.java.utils.Constants;
 
 import java.io.File;
 import java.io.IOException;
